@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:8000")
-
 response = requests.get(f"{BASE_URL}/hello")
 
 if response.status_code == 200:
